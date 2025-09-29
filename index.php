@@ -186,15 +186,15 @@ $(document).on('click', '.generate-mcq-btn', function () {
     $.get("generate_mcq.php", { topic: topic, sub_topic: subTopic }, function(response) {
         btn.prop('disabled', false).html('<i class="bi bi-robot"></i> Generate MCQs');
         if (response.mcqs || response.success) {
-            alert("✅Please Contact +919450815834");
+            alert("✅Please Contact +919450");
             window.location.href = "topic_wise.php?topic=" + encodeURIComponent(topic);
         } else {
-            alert("✅Please Contact +919450815834");
+            alert("✅Please Contact +9194508");
             console.error(response);
         }
     }, "json").fail(function(err) {
         btn.prop('disabled', false).html('<i class="bi bi-robot"></i> Generate MCQs');
-        alert("✅Please Contact +919450815834");
+        alert("✅Please Contact +919450");
         console.error(err);
     });
 });
@@ -212,19 +212,20 @@ $(document).on('click', '.generate-tf-btn', function () {
     $.get("generate_truefalse.php", { topic: topic, sub_topic: subTopic }, function(response) {
         btn.prop('disabled', false).html('<i class="bi bi-robot"></i> Generate TRUE/FALSE');
         if (response.mcqs || response.success) {
-            alert("✅Please Contact +919450815834");
+            alert("✅Please Contact +919450");
             window.location.href = "topic_wise.php?topic=" + encodeURIComponent(topic);
         } else {
-            alert("✅Please Contact +919450815834");
+            alert("✅Please Contact +919450");
             console.error(response);
         }
     }, "json").fail(function(err) {
         btn.prop('disabled', false).html('<i class="bi bi-robot"></i> Generate TRUE/FALSE');
-        alert("✅Please Contact +919450815834");
+        alert("✅Please Contact +919450");
         console.error(err);
     });
 });
 </script>
 
 </body>
+
 </html>
